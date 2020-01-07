@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
       <workItem from="1578292910143" duration="552000" />
       <workItem from="1578294801149" duration="3743000" />
       <workItem from="1578310414568" duration="1320000" />
-      <workItem from="1578397269045" duration="18170000" />
+      <workItem from="1578397269045" duration="20103000" />
     </task>
     <servers />
   </component>
@@ -110,6 +111,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="453" y="169" width="464" height="384" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1578426754475" />
+    <state x="416" y="113" width="524" height="496" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578440501232">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="416" y="113" width="524" height="496" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1578440501232" />
     <state x="310" y="0" width="736" height="724" key="CommitChangelistDialog2" timestamp="1576594833074">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
