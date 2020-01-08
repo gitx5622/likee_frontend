@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Layout, Row, Col, Icon, Input, Badge} from 'antd';
 import '../css/Main.css'
 import Navigation from "./Navigation";
-import _ from 'lodash'
+// import _ from 'lodash'
 import Suggestions from "./Suggestions";
 
 
@@ -10,8 +10,8 @@ const { Footer } = Layout;
 
 
 const Main  = (props) => {
-    const [posts, setPosts] = useState([]);
-    const [searchfield, setSearchfield] = useState('');
+    // const [posts, setPosts] = useState([]);
+    // const [searchfield, setSearchfield] = useState('');
     //
     // const authSelector = useSelector((state) => state.PostsState);
     //
@@ -20,31 +20,31 @@ const Main  = (props) => {
     // const postsSelector = useSelector((state) => state.PostsState);
     //
     // let postcount = postsSelector.posts.length;
-
-    const onSearchChange = (event) => {
-        setSearchfield(event.target.value);
-        console.log(event.target.value)
-    };
-
-
-    useEffect(() => {
-        fetch("http://localhost:9000/posts")
-            .then(response => response.json())
-            .then(json => {
-                console.log(json);
-                setPosts(json.response)
-            });
-    }, []);
-
-         const filteredCharacters = posts.filter(post => {
-            return post.content.toLowerCase().includes(searchfield.toLowerCase());
-        });
-
-        // Searching the filter post using indefOf
-        const filtered = _.filter(posts, (post) => {
-            return post.title.indexOf(searchfield) > -1
-         });
-         console.log(filtered, filteredCharacters);
+    //
+    // const onSearchChange = (event) => {
+    //     setSearchfield(event.target.value);
+    //     console.log(event.target.value)
+    // };
+    //
+    //
+    // useEffect(() => {
+    //     fetch("http://localhost:9000/posts")
+    //         .then(response => response.json())
+    //         .then(json => {
+    //             console.log(json);
+    //             setPosts(json.response)
+    //         });
+    // }, []);
+    //
+    //      const filteredCharacters = posts.filter(post => {
+    //         return post.content.toLowerCase().includes(searchfield.toLowerCase());
+    //     });
+    //
+    //     // Searching the filter post using indefOf
+    //     const filtered = _.filter(posts, (post) => {
+    //         return post.title.indexOf(searchfield) > -1
+    //      });
+    //      console.log(filtered, filteredCharacters);
     return (
         <div>
             <Navigation/>
@@ -67,10 +67,10 @@ const Main  = (props) => {
                         {props.children}
                     </Col>
                     <Col span={6} className="right-sidebar p-3 animated bounceInRight d-none d-sm-block">
-                        <div className="searchbar">
-                            <SearchBox searchChange= {onSearchChange}  />
-                        </div><br/>
-                        <Suggestions posts={filteredCharacters} />
+                        {/*<div className="searchbar">*/}
+                        {/*    <SearchBox searchChange= {onSearchChange}  />*/}
+                        {/*</div><br/>*/}
+                        {/*<Suggestions posts={filteredCharacters} />*/}
                         <br/>
                         <div className="sidebar-footer">
                             <ul>
