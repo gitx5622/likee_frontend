@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {Layout, Row, Col, Icon, Input, Badge} from 'antd';
-import { useSelector} from "react-redux";
 import '../css/Main.css'
 import Navigation from "./Navigation";
 import _ from 'lodash'
@@ -13,14 +12,14 @@ const { Footer } = Layout;
 const Main  = (props) => {
     const [posts, setPosts] = useState([]);
     const [searchfield, setSearchfield] = useState('');
-
-    const authSelector = useSelector((state) => state.PostsState);
-
-    let auth = authSelector.authPosts.length;
-
-    const postsSelector = useSelector((state) => state.PostsState);
-
-    let postcount = postsSelector.posts.length;
+    //
+    // const authSelector = useSelector((state) => state.PostsState);
+    //
+    // let auth = authSelector.authPosts.length;
+    //
+    // const postsSelector = useSelector((state) => state.PostsState);
+    //
+    // let postcount = postsSelector.posts.length;
 
     const onSearchChange = (event) => {
         setSearchfield(event.target.value);
@@ -54,8 +53,8 @@ const Main  = (props) => {
                     <Col span={6} className="left-sidebar animated flash">
                         <ul>
                             <li> <Icon type="home"  style={{color:"#40a9ff"}} />&nbsp; <a href="/">Home</a>  &nbsp;</li>
-                            <li><Badge style={{ backgroundColor: '#52c41a' }}  count={postcount}><Icon type="eye"  style={{color:"#40a9ff"}}/></Badge>&nbsp; <a href="/">&nbsp; Total Posts</a></li>
-                            <li><Badge style={{ backgroundColor: '#52c41a' }}  count={auth}><Icon type="user" style={{color:"#40a9ff"}} /></Badge>&nbsp; <a href="/authposts">&nbsp;My Posts</a></li>
+                            <li><Badge style={{ backgroundColor: '#52c41a' }}  count={10}><Icon type="eye"  style={{color:"#40a9ff"}}/></Badge>&nbsp; <a href="/">&nbsp; Total Posts</a></li>
+                            <li><Badge style={{ backgroundColor: '#52c41a' }}  count={8}><Icon type="user" style={{color:"#40a9ff"}} /></Badge>&nbsp; <a href="/authposts">&nbsp;My Posts</a></li>
                             <li><Icon type="message"  style={{color:"#40a9ff"}}/>&nbsp; <a href="/">Messages</a>  &nbsp;   </li>
                             <li><Icon type="ordered-list"  style={{color:"#40a9ff"}}/>&nbsp; <a href="/">Lists</a>  &nbsp;   </li>
                             <li><Icon type="user"  style={{color:"#40a9ff"}}/>&nbsp; <a href="/">Profile</a>  &nbsp;   </li>
