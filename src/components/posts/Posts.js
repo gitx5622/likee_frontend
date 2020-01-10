@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import '../../css/Posts.css';
-
 import { fetchPosts } from '../../store/posts/actions/postsAction';
 import Post from './Post'
 

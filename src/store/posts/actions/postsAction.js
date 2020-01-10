@@ -13,10 +13,10 @@ export const fetchPosts = () => {
         axios.get(`${API_ROUTE}/posts`).then(res => {
             dispatch({ type: FETCH_POSTS, payload: res.data.response })
         }).catch(err => {
-            dispatch({ type: FETCH_POSTS_ERROR, payload: err.response ? err.respons.data.error : "" })
+            dispatch({ type: FETCH_POSTS_ERROR, payload: err.response ? err.response.data.error : "" })
         })
     }
-}
+};
 
 export const fetchPost = id => {
 

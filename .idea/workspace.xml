@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c0395923-26a4-46ff-a527-f9be034633cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/Posts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/posts/actions/postsAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/posts/actions/postsAction.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,14 @@
       <workItem from="1578294801149" duration="3743000" />
       <workItem from="1578310414568" duration="1320000" />
       <workItem from="1578397269045" duration="20754000" />
-      <workItem from="1578479376280" duration="1438000" />
+      <workItem from="1578479376280" duration="1907000" />
+      <workItem from="1578508180715" duration="595000" />
+      <workItem from="1578559915169" duration="612000" />
+      <workItem from="1578566940589" duration="11293000" />
+      <workItem from="1578582264314" duration="615000" />
+      <workItem from="1578584909925" duration="776000" />
+      <workItem from="1578593985211" duration="1165000" />
+      <workItem from="1578630965404" duration="17000" />
     </task>
     <servers />
   </component>
@@ -119,10 +128,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="310" y="0" width="736" height="724" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576594833074" />
-    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl" timestamp="1578315751224">
+    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl" timestamp="1578630980221">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578315751224" />
+    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578630980221" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1577169118266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
