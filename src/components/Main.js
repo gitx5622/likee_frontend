@@ -5,7 +5,7 @@ import '../css/Main.css'
 import Navigation from "./Navigation";
 import _ from 'lodash'
 import Suggestions from "./Suggestions";
-
+import API_ROUTE from "../constants";
 
 const { Footer } = Layout;
 
@@ -29,7 +29,7 @@ const Main  = (props) => {
 
 
     useEffect(() => {
-        fetch("http://localhost:9000/posts")
+        fetch(`${API_ROUTE}/posts`)
             .then(response => response.json())
             .then(json => {
                 console.log(json);
