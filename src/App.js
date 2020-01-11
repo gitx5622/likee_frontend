@@ -18,7 +18,7 @@ class App extends Component {
     render() {
         return (
 
-           <Router history={history}>
+           <Router basename={window.location.pathname || ''} history={history}>
 
                <Route exact path={["/", "/createpost","/profile/:id", "/forgotpassword","/resetpassword/:token", "/posts/:id","/authposts"]}>
                    < Main {...this.props}>
