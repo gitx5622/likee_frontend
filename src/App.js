@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter  as Router, Switch, Route} from 'react-router-dom'
+import {Router, Switch, Route} from 'react-router-dom'
 import Main from "./components/Main";
 import Login from "./containers/Login";
 import Register from "./containers/Register";
@@ -18,7 +18,7 @@ class App extends Component {
     render() {
         return (
 
-           <Router basename={window.location.pathname || ''} history={history}>
+           <Router history={history}>
 
                <Route exact path={["/", "/createpost","/profile/:id", "/forgotpassword","/resetpassword/:token", "/posts/:id","/authposts"]}>
                    < Main {...this.props}>
