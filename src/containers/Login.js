@@ -50,12 +50,12 @@ const Login = () => {
                         <form onSubmit={submitUser}>
                             <div className="mb-2">
                                 { currentState.loginError && currentState.loginError.Incorrect_details ? (
-                                    <small className="color-red">{currentState.loginError.Incorrect_details}</small>
+                                    <p className="text-danger">{currentState.loginError.Incorrect_details}</p>
                                 ) : (
                                     ""
                                 )}
                                 { currentState.loginError && currentState.loginError.No_record ? (
-                                    <small className="color-red">{currentState.loginError.No_record}</small>
+                                    <small className="text-danger">{currentState.loginError.No_record}</small>
                                 ) : (
                                     ""
                                 )}
@@ -64,12 +64,12 @@ const Login = () => {
                                 <Label>Email</Label>
                                 <Input type="email" name="email" placeholder="Enter email" onChange={handleChange} />
                                 { currentState.loginError && currentState.loginError.Required_email ? (
-                                    <small className="color-red">{currentState.loginError.Required_email}</small>
+                                    <p className="text-danger">{currentState.loginError.Required_email}</p>
                                 ) : (
                                     ""
                                 )}
                                 { currentState.loginError && currentState.loginError.Invalid_email ? (
-                                    <small className="color-red">{ currentState.loginError.Invalid_email }</small>
+                                    <p className="text-danger">{ currentState.loginError.Invalid_email }</p>
                                 ) : (
                                     ""
                                 )}

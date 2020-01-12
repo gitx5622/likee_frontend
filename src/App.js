@@ -20,22 +20,23 @@ class App extends Component {
 
            <Router history={history}>
 
-               <Route exact path={["/", "/createpost","/profile/:id", "/forgotpassword","/resetpassword/:token", "/posts/:id","/authposts"]}>
+               <Route exact path={["/", "/createpost","/profile/:id","/posts/:id","/authposts"]}>
                    < Main {...this.props}>
                        <Switch>
                        <Route exact path="/" component={Posts} />
                        <Route path='/createpost' component={CreatePost} />
                        <Route path='/profile/:id' component={Profile} />
-                       <Route path='/forgotpassword' component={ForgotPassword} />
                        <Route path='/resetpassword/:token' component={ResetPassword} />
                        <Route path='/posts/:id' component={PostDetails} />
                        <Route path='/authposts' component={AuthPosts} />
                        </Switch>
                    </Main>
                </Route>
-               <Route path={["/login", "/signup"]}>
+               <Route path={["/login", "/signup",'/forgotpassword',"/resetpassword/:token",]}>
                        <Route path="/login" component={Login} />
                        <Route path='/signup' component={Register} />
+                       <Route path='/forgotpassword' component={ForgotPassword} />
+                       <Route path='/resetpassword/:token' component={ResetPassword} />
                </Route>
 
            </Router>

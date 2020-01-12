@@ -8,9 +8,6 @@ import  '../css/Profile.css'
 import Message from '../utils/Message';
 
 
-
-import Navigation from "../components/Navigation"
-
 const Profile = () => {
 
     const [modal, setModal] = useState(false);
@@ -103,7 +100,6 @@ const Profile = () => {
 
     return (
         <Fragment>
-            <Navigation />
             <div className="post-style container">
                 <div className="card-style">
                     <div className="text-center">

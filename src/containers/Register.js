@@ -5,7 +5,7 @@ import { Redirect, Link } from 'react-router-dom';
 import background from '../assets/background.jpg';
 import "./Auth.css";
 import { SignUp } from '../store/auth/actions/authActions';
-import Navigation from "../components/Navigation";
+
 
 
 const Register = () => {
@@ -17,24 +17,24 @@ const Register = () => {
         email: '',
         password: ''
     });
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
-    const addUser = (credentials) => dispatch(SignUp(credentials))
+    const addUser = (credentials) => dispatch(SignUp(credentials));
 
     const handleChange = e => {
         setUser({
             ...user,
             [e.target.name]: e.target.value
         })
-    }
+    };
     const submitUser = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         addUser({
             username: user.username,
             email: user.email,
             password: user.password
         });
-    }
+    };
 
     if(currentState.isAuthenticated){
         return <Redirect to='/' />
@@ -123,6 +123,6 @@ const Register = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Register

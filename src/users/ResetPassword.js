@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Label, Input, FormGroup, Button, Card, CardHeader, CardBody } from "reactstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { Redirect, Link } from 'react-router-dom';
-
-import Navigation from '../components/Navigation'
 import { ResetPassword } from '../store/auth/actions/authActions';
 import Message from '../utils/Message';
 
@@ -55,9 +53,6 @@ const PasswordReset = (props) => {
 
     return (
         <div className="App">
-            <div>
-                <Navigation />
-            </div>
             <div className="container Auth">
                 <Card className="card-style">
                     <CardHeader>Reset Password</CardHeader>
