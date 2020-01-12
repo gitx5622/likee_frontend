@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Label, Input, FormGroup, Button, Card, CardHeader, CardBody } from "reactstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { Redirect, Link } from 'react-router-dom';
-
 import "./Auth.css";
 import { SignIn } from '../store/auth/actions/authActions';
-
+import background from '../assets/background.jpg';
+import Navigation from "../components/Navigation";
 
 
 const Login = () => {
@@ -40,7 +40,9 @@ const Login = () => {
     }
 
     return (
-        <div className="App">
+        <div className="App"  style={{ backgroundImage:`url(${background})`,backgroundAttachment: "fixed",
+            backgroundRepeat: "no-repeat",backgroundSize:"cover" }}>
+            <Navigation/>
             <div className="container Auth animated flip">
                 <Card className="card-style">
                     <CardHeader>Login</CardHeader>

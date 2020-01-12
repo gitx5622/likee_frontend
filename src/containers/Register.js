@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Label, Input, FormGroup, Button, Card, CardHeader, CardBody } from "reactstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { Redirect, Link } from 'react-router-dom';
-
+import background from '../assets/background.jpg';
 import "./Auth.css";
 import { SignUp } from '../store/auth/actions/authActions';
+import Navigation from "../components/Navigation";
 
 
 const Register = () => {
@@ -40,10 +41,11 @@ const Register = () => {
     }
 
     return (
-        <div className="App">
+        <div className="App"  style={{ backgroundImage:`url(${background})`,backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center', backgroundSize: 'cover'}}>
             <div className="container Auth animated flip">
                 <Card className="card-style">
-                    <CardHeader>Welcome To React-Go</CardHeader>
+                    <CardHeader>Welcome To Likee</CardHeader>
                     <CardBody>
                         <form onSubmit={submitUser}>
                             <FormGroup>

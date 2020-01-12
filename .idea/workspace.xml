@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c0395923-26a4-46ff-a527-f9be034633cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Auth.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/auth/actionTypes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/actionTypes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,6 +45,9 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/posts" />
@@ -103,7 +110,10 @@
       <workItem from="1578630965404" duration="17000" />
       <workItem from="1578649432908" duration="4127000" />
       <workItem from="1578722181177" duration="2902000" />
-      <workItem from="1578730763111" duration="1082000" />
+      <workItem from="1578730763111" duration="3511000" />
+      <workItem from="1578764235014" duration="599000" />
+      <workItem from="1578814808024" duration="11000" />
+      <workItem from="1578816712429" duration="5940000" />
     </task>
     <servers />
   </component>
@@ -127,10 +137,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="310" y="0" width="736" height="724" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576594833074" />
-    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl" timestamp="1578630980221">
+    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl" timestamp="1578814817226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578630980221" />
+    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578814817226" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1577169118266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
