@@ -31,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../e-shop" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -110,6 +110,7 @@
       <workItem from="1578764235014" duration="599000" />
       <workItem from="1578814808024" duration="11000" />
       <workItem from="1578816712429" duration="12489000" />
+      <workItem from="1578918415220" duration="1229000" />
     </task>
     <servers />
   </component>
@@ -133,10 +134,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="310" y="0" width="736" height="724" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576594833074" />
-    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl" timestamp="1578814817226">
+    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl" timestamp="1578937720476">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578814817226" />
+    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578937720476" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1577169118266">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
