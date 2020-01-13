@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c0395923-26a4-46ff-a527-f9be034633cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/auth/actions/authActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/auth/actions/authActions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../e-shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -110,7 +111,8 @@
       <workItem from="1578764235014" duration="599000" />
       <workItem from="1578814808024" duration="11000" />
       <workItem from="1578816712429" duration="12489000" />
-      <workItem from="1578918415220" duration="1229000" />
+      <workItem from="1578918415220" duration="2963000" />
+      <workItem from="1578943147188" duration="969000" />
     </task>
     <servers />
   </component>
