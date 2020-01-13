@@ -27,7 +27,7 @@ export const SignIn = (credentials) => {
             dispatch({ type: LOGIN_SUCCESS, payload: userData });
             dispatch(checkAuthTimeout(3600));
         } catch(err) {
-            dispatch({ type: LOGIN_ERROR, payload: err.response.error })
+            dispatch({ type: LOGIN_ERROR, payload: err.response.data.error })
         }
     }
 };
@@ -51,7 +51,7 @@ export const SignUp = (newUser) => {
             dispatch({ type: SIGNUP_SUCCESS });
             history.push('/login');
         } catch(err) {
-            dispatch({ type: SIGNUP_ERROR, payload: err.response.error })
+            dispatch({ type: SIGNUP_ERROR, payload: err.response.data.error })
         }
     }
 };
