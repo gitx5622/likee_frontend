@@ -27,7 +27,7 @@ export const SignIn = (credentials) => {
             dispatch({ type: LOGIN_SUCCESS, payload: userData });
             dispatch(checkAuthTimeout(3600));
         } catch(err) {
-            dispatch({ type: LOGIN_ERROR, payload: err.data.response.error })
+            dispatch({ type: LOGIN_ERROR, payload: err.response.error })
         }
     }
 };
@@ -51,7 +51,7 @@ export const SignUp = (newUser) => {
             dispatch({ type: SIGNUP_SUCCESS });
             history.push('/login');
         } catch(err) {
-            dispatch({ type: SIGNUP_ERROR, payload: err.data.response.error })
+            dispatch({ type: SIGNUP_ERROR, payload: err.response.error })
         }
     }
 };
@@ -70,7 +70,7 @@ export const updateUserAvatar = (updateUserAvatar) => {
             window.localStorage.setItem('user_data', JSON.stringify(updatedUser)); //update the localstorage
             dispatch({ type: UPDATE_USER_AVATAR, payload: updatedUser })
         } catch (err) {
-            dispatch({ type: UPDATE_USER_AVATAR_ERROR, payload: err.data.response.error })
+            dispatch({ type: UPDATE_USER_AVATAR_ERROR, payload: err.response.data.error })
         }
     }
 };
@@ -88,7 +88,7 @@ export const updateUser = (updateUser, clearInput) => {
             window.localStorage.setItem('user_data', JSON.stringify(updatedUser)); //update the localstorages
             clearInput()
         } catch (err) {
-            dispatch({ type: UPDATE_USER_ERROR, payload: err.data.response.error })
+            dispatch({ type: UPDATE_USER_ERROR, payload: err.response.data.error })
         }
     }
 };
@@ -104,7 +104,7 @@ export const deleteUser = (id)  => {
             window.localStorage.clear(); //update the localstorage
             window.location.href = "/"
         } catch (err) {
-            dispatch({ type: DELETE_USER_ERROR, payload: err.data.response.error })
+            dispatch({ type: DELETE_USER_ERROR, payload: err.response.data.error })
         }
     }
 };
@@ -122,7 +122,7 @@ export const ForgotPassword = (userEmail, clearInput) => {
             dispatch({ type: FORGOT_PASSWORD_SUCCESS, payload: passwordRequest });
             clearInput()
         } catch (err) {
-            dispatch({ type: FORGOT_PASSWORD_ERROR, payload: err.data.response.error })
+            dispatch({ type: FORGOT_PASSWORD_ERROR, payload: err.response.data.error })
         }
     }
 };
@@ -139,7 +139,7 @@ export const ResetPassword = (details, clearInput) => {
             dispatch({ type: RESET_PASSWORD_SUCCESS, payload: passwordRequest });
             clearInput()
         } catch (err) {
-            dispatch({ type: RESET_PASSWORD_ERROR, payload: err.data.response.error })
+            dispatch({ type: RESET_PASSWORD_ERROR, payload: err.response.data.error })
         }
     }
 };
