@@ -21,7 +21,7 @@ import {
 
 const Navigation = () => {
 
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
 
     const currentState = useSelector((state) => state);
 
@@ -41,9 +41,9 @@ const Navigation = () => {
     }
 
     const logout = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         logoutUser()
-    }
+    };
 
     const userProfile = isAuthenticated ?  `/profile/${currentState.Auth.currentUser.id}` : ""
 
@@ -84,7 +84,7 @@ const Navigation = () => {
                 <Link to='/signup'>Signup</Link>
             </NavItem>
         </React.Fragment>
-    )
+    );
 
 
     return (
@@ -103,6 +103,6 @@ const Navigation = () => {
             </Navbar>
         </div>
     );
-}
+};
 
 export default Navigation
