@@ -9,15 +9,15 @@ You will also see any lint errors in the console.
 Runs the app in the production <br />
 Open https://likee.co.ke to view it in the browser.
 
-![](src/assets/likee1.png)
-
 ## View all posts
 
-![](src/assets/likee3.png)
+![](src/assets/likee1.png)
 
 ## Login to view my posts
 ## See post detail
 
+![](src/assets/likee3.png)
+
 ![](src/assets/likee2.png)
 
-## Enjoy shopping with onlineshoppingkenya
+## Enjoy likee.co.ke
