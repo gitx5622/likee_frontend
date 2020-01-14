@@ -1,5 +1,4 @@
 import React from 'react';
-import Posts from './posts/Posts';
 import Navigation from './Navigation'
 
 
@@ -9,6 +8,6 @@ const Dashboard = () => {
             <Navigation />
         </div>
     )
-}
+};
 
 export default Dashboard;
