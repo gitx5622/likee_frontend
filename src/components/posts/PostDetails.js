@@ -65,7 +65,7 @@ const PostDetails = (props) => {
                 <Col span={20} >
                     <div className="contentx">
                         <span href="" style={{fontWeight: 'bold'}}>{post.author ? post.author.username : ""}
-                            <Moment fromNow style={{float:"right", marginRight:"30px"}}>{post.created_at}</Moment></span>
+                            <Moment fromNow style={{float:"right", marginRight:"10px"}}>{post.created_at}</Moment></span>
                         <h6>{post.title}</h6>
                         <p>{post.content}</p>
                     </div>
@@ -94,7 +94,7 @@ const PostDetails = (props) => {
                         : ""
                     }
                 </div>
-            <hr style={{marginLeft:"0px",marginRight:"0px",marginTop:"-20px"}}/>
+            <hr className="post_detail-hr"/>
         </div>
     )
 }

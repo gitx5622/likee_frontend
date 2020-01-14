@@ -58,7 +58,7 @@ const Post = ({ post }) => {
                         </div>
                     ) : ""}
                 </div>
-        <hr style={{marginLeft:"-20px",marginRight:"-20px"}}/>
+        <hr className="posts-hr"/>
         </div>
     )
 }

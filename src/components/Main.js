@@ -53,13 +53,13 @@ const Main  = (props) => {
                 <Row>
                     <Col span={6} className="left-sidebar animated flash">
                         <ul>
-                            <li> <Icon type="home"  style={{color:"#40a9ff"}} />&nbsp; <a href="/">Home</a>  &nbsp;</li>
-                            <li><Badge style={{ backgroundColor: '#52c41a' }}  count={postcount}><Icon type="eye"  style={{color:"#40a9ff"}}/></Badge>&nbsp; <a href="/">&nbsp; Total Posts</a></li>
-                            <li><Badge style={{ backgroundColor: '#52c41a' }}  count={auth}><Icon type="user" style={{color:"#40a9ff"}} /></Badge>&nbsp; <a href="/authposts">&nbsp;My Posts</a></li>
-                            <li><Icon type="message"  style={{color:"#40a9ff"}}/>&nbsp; <a href="/">Messages</a>  &nbsp;   </li>
-                            <li><Icon type="ordered-list"  style={{color:"#40a9ff"}}/>&nbsp; <a href="/">Lists</a>  &nbsp;   </li>
-                            <li><Icon type="user"  style={{color:"#40a9ff"}}/>&nbsp; <a href="/">Profile</a>  &nbsp;   </li>
-                            <li><Icon type="fire"  style={{color:"#40a9ff"}}/>&nbsp; <a href="/">Trending</a>  </li>
+                            <li> <a href="/"><Icon type="home"  style={{color:"#40a9ff"}} />&nbsp; Home</a>  &nbsp;</li>
+                            <li><a href="/"><Badge style={{ backgroundColor: '#52c41a' }}  count={postcount}><Icon type="eye"  style={{color:"#40a9ff"}}/></Badge>&nbsp; &nbsp; Total Posts</a></li>
+                            <li><a href="/authposts"><Badge style={{ backgroundColor: '#52c41a' }}  count={auth}><Icon type="user" style={{color:"#40a9ff"}} /></Badge>&nbsp; &nbsp;My Posts</a></li>
+                            <li><a href="/"><Icon type="message"  style={{color:"#40a9ff"}}/>&nbsp; Messages</a>  &nbsp;   </li>
+                            <li><a href="/"><Icon type="ordered-list"  style={{color:"#40a9ff"}}/>&nbsp; Lists</a>  &nbsp;   </li>
+                            <li><a href="/"><Icon type="user"  style={{color:"#40a9ff"}}/>&nbsp; Profile</a>  &nbsp;   </li>
+                            <li><a href="/"><Icon type="fire"  style={{color:"#40a9ff"}}/>&nbsp; Trending</a>  </li>
                             <button className="button btn btn-primary animated flip"><a href="/">See posts</a></button>
                         </ul>
 

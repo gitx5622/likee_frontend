@@ -88,7 +88,7 @@ const Navigation = () => {
 
 
     return (
-        <div className="mb-3">
+        <div className="mb-2">
             <Navbar className="navbar-header" color="light" light expand="md">
 
                 <NavbarBrand className="mx-auto" href="/"><img className="logo"

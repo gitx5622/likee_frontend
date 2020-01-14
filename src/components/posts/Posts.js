@@ -42,8 +42,9 @@ const Posts = (props) => {
                 </g>
             </svg>
         </div>
-            <hr style={{marginLeft:"0px",marginRight:"0px"}}/>
-           <div className="container">{posts}</div>
+            <hr className="home-hr"/>
+            <div className="container d-none d-md-block">{posts}</div>
+            <div className="d-block d-md-none">{posts}</div>
         </div>
     )
 };
