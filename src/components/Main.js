@@ -51,8 +51,8 @@ const Main  = (props) => {
             <Navigation/>
             <div className="layout">
                 <Row>
-                    <Col span={6} className="left-sidebar animated flash">
-                        <ul>
+                    <Col span={6} className="left-sidebar">
+                        <ul className="d-none d-md-block animated flash">
                             <li> <a href="/"><Icon type="home"  style={{color:"#40a9ff"}} />&nbsp; Home</a>  &nbsp;</li>
                             <li><a href="/"><Badge style={{ backgroundColor: '#52c41a' }}  count={postcount}><Icon type="eye"  style={{color:"#40a9ff"}}/></Badge>&nbsp; &nbsp; Total Posts</a></li>
                             <li><a href="/authposts"><Badge style={{ backgroundColor: '#52c41a' }}  count={auth}><Icon type="user" style={{color:"#40a9ff"}} /></Badge>&nbsp; &nbsp;My Posts</a></li>
@@ -61,6 +61,22 @@ const Main  = (props) => {
                             <li><a href="/"><Icon type="user"  style={{color:"#40a9ff"}}/>&nbsp; Profile</a>  &nbsp;   </li>
                             <li><a href="/"><Icon type="fire"  style={{color:"#40a9ff"}}/>&nbsp; Trending</a>  </li>
                             <button className="button btn btn-primary animated flip"><a href="/">See posts</a></button>
+                        </ul>
+                        <ul className="d-block d-md-none">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                            <li><a href="/"><i className="fa fa-dashboard" aria-hidden="true"/></a></li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                            <li><a href="/authposts"><i className="fa fa-eye" aria-hidden="true"/></a></li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                            <li><a href="/createpost"><i className="fa fa-plus-circle" aria-hidden="true"/></a></li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                            <li><a href="/"><i className="fa fa-comment-o" aria-hidden="true"/></a></li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                            <li><a href="/"><i className="fa fa-check-circle" aria-hidden="true"/></a></li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                            <li><a href="/"><i className="fa fa-fire" aria-hidden="true"/></a></li>
+                            {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                            <li><a href="/profile/:id'"><i className="fa fa-cog" aria-hidden="true"/></a></li>
                         </ul>
 
                     </Col>

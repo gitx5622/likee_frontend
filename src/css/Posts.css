@@ -11,20 +11,11 @@
     margin-top: -20px;
     margin-left: 0px;
 }
-@media (max-width: 768px) {
-    .posts-hr {
-        margin-left: -4px;
-    }
-    .home-hr {
-        margin-right: -20px;
-        margin-left: 0px;
-    }
-    .post_detail-hr {
-        margin-right: -20px;
-        margin-top: -20px;
-        margin-left: 0px;
-    }
+.post-style {
+    margin-top: -8px;
+    margin-right: 0px;
 }
+
 .homeview svg {
     float: right;
     margin-right: 10px;
@@ -50,10 +41,34 @@
         width: 30px;
 
     }
+    .homeview svg {
+        float: right;
+        margin-right: -15px;
+        margin-top: -40px;
+    }
     .dropdown-menu {
         position: absolute;
         left: -10rem;
         top: 100%;
+    }
+    .post-style {
+        margin-top: -8px;
+        margin-right: -20px;
+    }
+    .posts-hr {
+        margin-left: -4px;
+    }
+    .home-hr {
+        margin-right: -20px;
+        margin-left: 0px;
+    }
+    .post_detail-hr {
+        margin-right: -20px;
+        margin-top: -20px;
+        margin-left: 0px;
+    }
+    .authpost {
+        margin-right: -20px;
     }
 }
 
@@ -98,13 +113,6 @@ a:hover{
 .style-fav {
     display: flex;
     justify-content: left;
-}
-
-@media all and (min-width: 480px) {
-    .post-style {
-        padding: 60px 0;
-    }
-
 }
 
 .toggle-style {

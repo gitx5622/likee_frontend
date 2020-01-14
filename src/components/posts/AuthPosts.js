@@ -41,9 +41,9 @@ const AuthPosts = () => {
 
     return (
         <div className="App">
-            <div className="container">
+            <div>
                 { authPosts.length > 0 ? (
-                    <div className="container">{authPosts}</div>
+                    <div className="authpost">{authPosts}</div>
                 ) : (
 
                     <div className="text-center mt-4">

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Label, Input, FormGroup, Button, Card, CardHeader, CardBody } from "reactstrap";
 import { Redirect } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
-
 import "../../css/Posts.css";
 import { createPost } from '../../store/posts/actions/postsAction';
 
@@ -40,8 +39,8 @@ const CreatePost = () => {
     return (
         <div>
 
-            <div className="post-style container App">
-                <Card className="card-style">
+            <div className="post-style">
+                <Card className="card-style" >
                     <CardHeader>Create Post</CardHeader>
                     <CardBody>
                         <form onSubmit={submitUser}>

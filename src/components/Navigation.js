@@ -1,27 +1,19 @@
-import React, { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 import logo from '../assets/logo.jpg'
 import { SignOut } from '../store/auth/actions/authActions';
 import Default from '../assets/default.png'
 import '../css/Navigation.css'
-
+import { Dropdown, Menu} from "antd";
 import {
-    Collapse,
     Navbar,
-    NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
+ } from 'reactstrap';
 
 
 const Navigation = () => {
-
-    const [isOpen, setIsOpen] = useState(false);
 
     const currentState = useSelector((state) => state);
 
@@ -45,45 +37,46 @@ const Navigation = () => {
         logoutUser()
     };
 
-    const userProfile = isAuthenticated ?  `/profile/${currentState.Auth.currentUser.id}` : ""
+    const userProfile = isAuthenticated ?  `/profile/${currentState.Auth.currentUser.id}` : "";
+
+    const menu = (
+        <Menu>
+        <Menu.Item key="1">
+            <NavLink to={userProfile} style={{textDecoration: "none"}}>Profile</NavLink>
+        </Menu.Item>
+        <Menu.Item key="2">
+            {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/anchor-is-valid */}
+        <a onClick={logout}>Logout ({currentUser.username})</a>
+    </Menu.Item>
+        </Menu>
+    );
 
     const SignedInLinks = (
         <React.Fragment>
-            <NavItem className="mt-2" style={{marginRight: "15px" }}>
+            <div style={{display:"inline-block"}}>
+            <ul className="logged-nav mt-2">
+            <li style={{marginRight: "15px" }}>
                 <NavLink to="/createpost">Create Post</NavLink>
-            </NavItem>
-            <NavItem className="mt-2" style={{marginRight: "15px" }}>
+            </li>
+            <li style={{marginRight: "15px" }}>
                 <NavLink to="/authposts">My Posts</NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+            </li>
+           <li>
+               <Dropdown overlay={menu}>
                     {imagePreview}
-                </DropdownToggle>
-                <DropdownMenu right>
-                    <DropdownItem>
-                        <NavItem>
-                            <NavLink to={userProfile} style={{textDecoration: "none"}}>Profile</NavLink>
-                        </NavItem>
-                    </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>
-                        <a onClick={logout}>Logout ({currentUser.username})</a>
-                    </DropdownItem>
-                </DropdownMenu>
-            </UncontrolledDropdown>
+                </Dropdown>
+           </li>
+            </ul>
+            </div>
         </React.Fragment>
 
-    )
+    );
 
     const SignedOutLinks = (
-        <React.Fragment>
-            <NavItem style={{marginRight: "20px" }}>
-                <Link to='/login'>Login</Link>
-            </NavItem>
-            <NavItem>
-                <Link to='/signup'>Signup</Link>
-            </NavItem>
-        </React.Fragment>
+        <ul className="signout-links">
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Signup</a></li>
+        </ul>
     );
 
 
@@ -93,13 +86,9 @@ const Navigation = () => {
 
                 <NavbarBrand className="mx-auto" href="/"><img className="logo"
                     src={logo} alt="logo" width="50px" height="50px" style={{borderRadius:"20px"}}/>&nbsp; <strong>L I K E E</strong></NavbarBrand>
-                <NavbarToggler onClick={() => setIsOpen(!isOpen) } />
-                <Collapse isOpen={isOpen} navbar>
                     <Nav className="links ml-auto" navbar>
                         { isAuthenticated ? SignedInLinks: SignedOutLinks }
                     </Nav>
-                </Collapse>
-
             </Navbar>
         </div>
     );
