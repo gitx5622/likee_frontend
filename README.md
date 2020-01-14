@@ -20,4 +20,8 @@ Open https://likee.co.ke to view it in the browser.
 
 ![](src/assets/likee2.png)
 
+
+## Comment to other posts
+![](src/assets/likee4.png)
+
 ## Enjoy likee.co.ke
