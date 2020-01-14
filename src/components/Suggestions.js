@@ -16,7 +16,7 @@ const Suggestions = (props) => {
     <Card className="suggestions-card" style={{ maxWidth: "300px" }} >
         <CardHeader>TOP SEARCHES</CardHeader>
         <CardBody>
-            <div className="options"> {options.slice(1,4)}</div>
+            <div className="options"> {options.slice(1,5)}</div>
         </CardBody>
 
     </Card>
