@@ -1,4 +1,4 @@
-## OnlineShoppingKenya
+## Likee - App works like Twitter
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -9,16 +9,15 @@ You will also see any lint errors in the console.
 Runs the app in the production <br />
 Open https://likee.co.ke to view it in the browser.
 
-![](src/assests/likee1.png)
+![](src/assets/likee1.png)
 
-## View products
+## View all posts
 
-![](src/assests/likee3.png)
+![](src/assets/likee3.png)
 
-## Add to Cart functionality
-## See products details
+## Login to view my posts
+## See post detail
 
-
-![](src/assests/likee2.png)
+![](src/assets/likee2.png)
 
 ## Enjoy shopping with onlineshoppingkenya
