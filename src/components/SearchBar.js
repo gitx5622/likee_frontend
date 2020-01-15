@@ -60,7 +60,7 @@ class SearchBar extends Component {
     renderSearchResults = () => {
         const {results, query} = this.state;
         const filteredCharacters = results.filter(post => {
-            return post.content.toLowerCase().includes(query.toLowerCase());
+            return (post.content && post.title).toLowerCase().includes(query.toLowerCase());
         });
         if (Object.keys(results).length && results.length) {
             return (
