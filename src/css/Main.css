@@ -10,6 +10,10 @@
     width: 70%;
 }
 
+.trending a {
+    color: #000000;
+}
+
 .left-sidebar button:hover {
     color: #404040 !important;
     font-weight: 700 !important;

@@ -58,7 +58,7 @@ const Main  = (props) => {
                     <Col span={6} className="right-sidebar p-3 animated bounceInRight d-none d-sm-block">
                         <SearchBar/>
                         <br/>
-                        <Card style={{ maxWidth: "300px",position:"relative",zIndex:"-1", color:"#000" }}>
+                        <Card className="trending" style={{ maxWidth: "300px",position:"relative",zIndex:"-1", color:"#000" }}>
                             <CardHeader>Trending Posts</CardHeader>
                             <CardLink>
                                 <div className="container">
