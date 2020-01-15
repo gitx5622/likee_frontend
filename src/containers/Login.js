@@ -43,7 +43,7 @@ const Login = () => {
         <div className="App"  style={{ backgroundImage:`url(${background})`,backgroundAttachment: "fixed",
             backgroundRepeat: "no-repeat",backgroundSize:"cover" }}>
             <Navigation/>
-            <div className="container Auth animated flip">
+            <div className="container Auth animated wooble">
                 <Card className="card-style">
                     <CardHeader>Login</CardHeader>
                     <CardBody>

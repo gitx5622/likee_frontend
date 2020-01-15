@@ -43,7 +43,7 @@ const Register = () => {
     return (
         <div className="App"  style={{ backgroundImage:`url(${background})`,backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center', backgroundSize: 'cover'}}>
-            <div className="container Auth animated flip">
+            <div className="container Auth animated wooble">
                 <Card className="card-style">
                     <CardHeader>Welcome To Likee</CardHeader>
                     <CardBody>
