@@ -12,6 +12,8 @@
 
 .trending a {
     color: #000000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
 }
 
 .left-sidebar button:hover {
