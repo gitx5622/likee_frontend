@@ -1,18 +1,14 @@
-import React, {useEffect, useState} from 'react';
-import {Layout, Row, Col, Icon, Input, Badge} from 'antd';
+import React from 'react';
+import {Layout, Row, Col, Icon, Badge} from 'antd';
 import { useSelector} from "react-redux";
 import '../css/Main.css'
 import Navigation from "./Navigation";
-import _ from 'lodash'
-import Suggestions from "./Suggestions";
-import API_ROUTE from "../constants";
+import SearchBar from "./SearchBar";
+import {Card, CardHeader,CardLink} from "shards-react";
+import check from "../assets/check.png";
 
 const { Footer } = Layout;
-
-
 const Main  = (props) => {
-    const [posts, setPosts] = useState([]);
-    const [searchfield, setSearchfield] = useState('');
 
     const authSelector = useSelector((state) => state.PostsState);
 
@@ -22,30 +18,6 @@ const Main  = (props) => {
 
     let postcount = postsSelector.posts.length;
 
-    const onSearchChange = (event) => {
-        setSearchfield(event.target.value);
-        console.log(event.target.value)
-    };
-
-
-    useEffect(() => {
-        fetch(`${API_ROUTE}/posts`)
-            .then(response => response.json())
-            .then(json => {
-                console.log(json);
-                setPosts(json.response)
-            });
-    }, []);
-
-         const filteredCharacters = posts.filter(post => {
-            return post.content.toLowerCase().includes(searchfield.toLowerCase());
-        });
-
-        // Searching the filter post using indefOf
-        const filtered = _.filter(posts, (post) => {
-            return post.title.indexOf(searchfield) > -1
-         });
-         console.log(filtered, filteredCharacters);
     return (
         <div>
             <Navigation/>
@@ -84,11 +56,20 @@ const Main  = (props) => {
                         {props.children}
                     </Col>
                     <Col span={6} className="right-sidebar p-3 animated bounceInRight d-none d-sm-block">
-                        <div className="searchbar">
-                            <SearchBox searchChange= {onSearchChange}  />
-                        </div><br/>
-                        <Suggestions posts={filteredCharacters} />
+                        <SearchBar/>
                         <br/>
+                        <Card style={{ maxWidth: "300px",position:"relative",zIndex:"-1", color:"#000" }}>
+                            <CardHeader>Trending Posts</CardHeader>
+                            <CardLink>
+                                <div className="container">
+                                    <p><a href="/posts/3">Token-based authentication <img src={check} alt="check" width="15px" height="15px"/></a></p><hr/>
+                                    <p><a href="/posts/6">Authentication jwt  <img src={check} alt="check" width="15px" height="15px"/></a></p><hr/>
+                                    <p><a href="/posts/9">How to learn programming  <img src={check} alt="check" width="15px" height="15px"/></a></p><hr/>
+                                    <p><a href="/posts/10">How to become a Software Engineer | Full Stack Developer Roadmap 2020  <img src={check} alt="check" width="15px" height="15px"/></a></p><hr/>
+                                    <p><a href="/posts/11">Top 5 Programming Languages to Learn in 2020 to Get a Job Without a College Degree  <img src={check} alt="check" width="15px" height="15px"/></a></p>
+                                </div>
+                            </CardLink>
+                        </Card><br/>
                         <div className="sidebar-footer">
                             <ul>
                                 <li>Terms</li>
@@ -105,18 +86,6 @@ const Main  = (props) => {
 
 };
 
-
-const SearchBox = ({searchChange})=> {
-    return (
-        <div className= 'searchbar'>
-            <Input className = 'search-input'
-                   type = 'text'
-                   placeholder = 'Search from all posts'
-                   onChange = {searchChange}
-            />
-        </div>
-    )
-};
 
 export default Main;
 

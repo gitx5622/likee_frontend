@@ -3,7 +3,7 @@ import {Layout, Row, Col, Icon, Input} from 'antd';
 import '../css/Main.css'
 import Navigation from "./Navigation";
 import _ from 'lodash'
-import Suggestions from "./Suggestions";
+import Suggestions from "./SearchBar";
 
 
 const { Footer } = Layout;
