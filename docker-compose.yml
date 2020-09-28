@@ -1,6 +1,15 @@
 version: '3'
 services:
-  web:
+  web-likee-dev:
+    container_name: likee-dev
     image: gits5622/likee_frontend
     ports:
         - '3001:80'
+
+  web-likee-prod:
+    container_name: likee-prod
+    build: 
+        context: .
+        dockerfile: Dockerfile.prod
+    ports:
+        - '3002:80'

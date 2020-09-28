@@ -1,9 +1,0 @@
-version: '3'
-services:
-  web-prod:
-    container_name: likee-prod
-    build:
-      context: .
-      dockerfile: Dockerfile.prod
-    ports:
-      - '3000:80'
