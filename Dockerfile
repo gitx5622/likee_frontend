@@ -22,4 +22,4 @@ HEALTHCHECK --interval=5s \
 EXPOSE 3000
 
 #Run the application
-CMD ["serve" "-s" "build"]
+CMD [serve -s build]
