@@ -11,6 +11,8 @@ COPY . /
 # Run npm install to install dependencies
 RUN npm install
 
+RUN npm run build
+
 # set a health check
 HEALTHCHECK --interval=5s \
             --timeout=5s \
