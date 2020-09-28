@@ -11,8 +11,7 @@ COPY . /
 # Run npm install to install dependencies
 RUN npm install \
     npm run build \
-    npm install -g serve \
-    serve -s build
+    npm install -g serve 
 
 # set a health check
 HEALTHCHECK --interval=5s \
@@ -23,4 +22,4 @@ HEALTHCHECK --interval=5s \
 EXPOSE 3000
 
 #Run the application
-CMD ["npm","start"]
+CMD ["serve" "-s" "build"]
