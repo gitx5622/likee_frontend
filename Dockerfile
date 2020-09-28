@@ -9,9 +9,10 @@ WORKDIR /
 # Bundle app source
 COPY . /
 # Run npm install to install dependencies
-RUN npm install
-
-RUN npm run build
+RUN npm install \
+    npm run build \
+    npm install -g serve \
+    serve -s build
 
 # set a health check
 HEALTHCHECK --interval=5s \
