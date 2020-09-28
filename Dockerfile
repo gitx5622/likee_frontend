@@ -1,25 +1,20 @@
-FROM node:12
+# pull official base image
+FROM node:13.12.0-alpine
 
-# Add Maintainer Info
-LABEL maintainer="George Gitau <gits5622@gmail.com>"
+# set working directory
+WORKDIR /app
 
-# Set the working directory to /home/app
-WORKDIR /
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
-# Bundle app source
-COPY . /
-# Run npm install to install dependencies
-RUN npm install \
-    npm run build \
-    npm install -g serve 
+# install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install --silent
+RUN npm install react-scripts@3.4.1 -g --silent
 
-# set a health check
-HEALTHCHECK --interval=5s \
-            --timeout=5s \
-            CMD curl -f http://127.0.0.1:3000 || exit 1
+# add app
+COPY . ./
 
-# Expose port 8080 to the outside world
-EXPOSE 3000
-
-#Run the application
-CMD [serve -s build]
+# start app
+CMD ["npm", "start"]
