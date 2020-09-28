@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c0395923-26a4-46ff-a527-f9be034633cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,26 +13,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
-    </option>
-  </component>
   <component name="ProjectId" id="1V79GbW9Tk9ziJ6dZkB0lbj7nj9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../counter-app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,6 +33,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -53,18 +47,7 @@
       <recent name="$PROJECT_DIR$/src/store" />
     </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -115,36 +98,18 @@
       <workItem from="1578943147188" duration="3418000" />
       <workItem from="1578952634711" duration="21761000" />
       <workItem from="1579042799420" duration="13574000" />
+      <workItem from="1600343807697" duration="5148000" />
+      <workItem from="1600449809129" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="24" width="800" height="673" key="#ESLint" timestamp="1578118574033">
+    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl" timestamp="1600449847626">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="278" y="24" width="800" height="673" key="#ESLint/0.0.1366.728@0.0.1366.728" timestamp="1578118574033" />
-    <state x="453" y="169" width="464" height="384" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578426754475">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="453" y="169" width="464" height="384" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1578426754475" />
-    <state x="416" y="113" width="524" height="496" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578440501232">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="416" y="113" width="524" height="496" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1578440501232" />
-    <state x="310" y="0" width="736" height="724" key="CommitChangelistDialog2" timestamp="1576594833074">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="310" y="0" width="736" height="724" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1576594833074" />
-    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl" timestamp="1578937720476">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="466" y="121" width="424" height="480" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578937720476" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1577169118266">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1577169118266" />
+    <state x="466" y="121" width="424" height="478" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600449847626" />
   </component>
 </project>
