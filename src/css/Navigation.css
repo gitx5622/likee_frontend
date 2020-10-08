@@ -1,50 +1,49 @@
 .style-navbar {
-    width: 100%!important;
-    display: flex;
-    justify-content: right;
-
+  width: 100% !important;
+  display: flex;
+  justify-content: right;
 }
 
 .style-dropdown {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .navbar-header .logo {
-    margin-left: -300px;
+  margin-left: -300px;
 }
-.signout-links li{
-    display: inline;
-    padding: 15px;
-    text-decoration: none;
+.signout-links li {
+  display: inline;
+  padding: 15px;
+  text-decoration: none;
 }
 
 .img_style_nav {
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
 }
 
 .logged-nav li {
-    display: inline;
+  display: inline;
 }
 
 @media (max-width: 768px) {
-    .navbar-header .logo {
-        margin-left: -50px;
-    }
-    .img_style_nav {
-        float: right;
-        margin-top: -8px;
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
-    }
+  .navbar-header .logo {
+    margin-left: -50px;
+  }
+  .img_style_nav {
+    float: right;
+    margin-top: -8px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
 
-    .signout-links a{
-        font-size: 14px;
-    }
+  .signout-links a {
+    font-size: 14px;
+  }
 
-    .logged-nav li {
-        display: inline;
-    }
+  .logged-nav li {
+    display: inline;
+  }
 }

@@ -1,66 +1,62 @@
-import React, { useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
-import '../../css/Posts.css';
-import { fetchComments } from '../../store/comments/actions/commentsAction';
-import CreateComment from './CreateComment'
-import { history } from '../../history'
-
-
-
+import "../../css/Posts.css";
+import { fetchComments } from "../../store/comments/actions/commentsAction";
+import CreateComment from "./CreateComment";
+import { history } from "../../history";
 
 const Comments = ({ postID }) => {
+  const dispatch = useDispatch();
 
-    const dispatch = useDispatch()
+  const currentState = useSelector((state) => state);
 
-    const currentState = useSelector((state) => state);
+  const authID = currentState.Auth.currentUser
+    ? currentState.Auth.currentUser.id
+    : "";
 
-    const authID = currentState.Auth.currentUser ? currentState.Auth.currentUser.id : ""
+  const postComments = currentState.CommentsState;
 
-    const postComments = currentState.CommentsState
+  const getPostComments = (id) => dispatch(fetchComments(id));
 
-    const getPostComments = id => dispatch(fetchComments(id))
+  let singlePostComments = [];
 
-    let singlePostComments = []
+  if (postComments) {
+    // eslint-disable-next-line array-callback-return
+    postComments.commentItems.map((eachItem) => {
+      if (eachItem.postID === postID) {
+        singlePostComments = eachItem.comments;
+      }
+    });
+  }
 
-    if(postComments){
-        // eslint-disable-next-line array-callback-return
-        postComments.commentItems.map(eachItem => {
-            if(eachItem.postID === postID){
-                singlePostComments = eachItem.comments
-            }
-        })
-    }
+  const noAuth = (e) => {
+    e.preventDefault();
+    history.push("/login");
+  };
 
-    const noAuth = (e) => {
-        e.preventDefault()
-        history.push('/login');
-    }
+  useEffect(() => {
+    getPostComments(postID);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-    useEffect(() => {
-        getPostComments(postID);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
-
-    return (
-        <div className="style-heart-outer">
+  return (
+    <div className="style-heart-outer">
       <span className="mr-4">
-        { authID ?
-            <span>
-          <CreateComment postID={postID} />
-        </span>
-            :
-            <span onClick={noAuth}>
-          <CreateComment />
-         </span>
-        }
-          <span className="ml-2">
-          {singlePostComments.length}
-        </span>
+        {authID ? (
+          <span>
+            <CreateComment postID={postID} />
+          </span>
+        ) : (
+          <span onClick={noAuth}>
+            <CreateComment />
+          </span>
+        )}
+        <span className="ml-2">{singlePostComments.length}</span>
         <div></div>
       </span>
-        </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Comments
+export default Comments;
