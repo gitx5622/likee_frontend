@@ -2,7 +2,6 @@ import React from "react";
 import Moment from "react-moment";
 import { useSelector } from "react-redux";
 import check from "../../assets/check.png";
-import { Row, Col } from "antd";
 import "../../css/Posts.css";
 import Default from "../../assets/default.png";
 import Likes from "../likes/Likes";
@@ -33,11 +32,11 @@ const Post = ({ post }) => {
 
   return (
     <div>
-      <Row>
-        <Col span={4}>
+      <div className="row">
+        <div className="col-sm-2">
           <div className="imagepreview mr-2">{$imagePreview}</div>
-        </Col>
-        <Col span={20}>
+        </div>
+        <div className="col-sm-10">
           <div className="contentx">
             <span href="" style={{ fontWeight: "bold" }}>
               {post.author.username}&nbsp;
@@ -49,8 +48,8 @@ const Post = ({ post }) => {
             <h6>{post.title}</h6>
             <p>{post.content}</p>
           </div>
-        </Col>
-      </Row>
+        </div>
+      </div>
       <div className="style-fav">
         <>
           <Likes postID={post.id} />

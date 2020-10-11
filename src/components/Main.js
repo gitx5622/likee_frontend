@@ -30,8 +30,8 @@ const Main = (props) => {
       <Navigation />
       <div className="layout">
         <Row>
-          <Col span={6} className="left-sidebar">
-            <ul className="d-none d-md-block animated flash">
+          <Col span={6} className="left-sidebar d-none d-md-block">
+            <ul className="animated flash">
               <li>
                 {" "}
                 <a href="/">
@@ -90,52 +90,12 @@ const Main = (props) => {
                 <a href="/">See posts</a>
               </button>
             </ul>
-            <ul className="d-block d-md-none">
-              {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-              <li>
-                <a href="/">
-                  <i className="fa fa-dashboard" aria-hidden="true" />
-                </a>
-              </li>
-              {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-              <li>
-                <a href="/authposts">
-                  <i className="fa fa-eye" aria-hidden="true" />
-                </a>
-              </li>
-              {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-              <li>
-                <a href="/createpost">
-                  <i className="fa fa-plus-circle" aria-hidden="true" />
-                </a>
-              </li>
-              {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-              <li>
-                <a href="/">
-                  <i className="fa fa-comment-o" aria-hidden="true" />
-                </a>
-              </li>
-              {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-              <li>
-                <a href="/">
-                  <i className="fa fa-check-circle" aria-hidden="true" />
-                </a>
-              </li>
-              {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-              <li>
-                <a href="/">
-                  <i className="fa fa-fire" aria-hidden="true" />
-                </a>
-              </li>
-              {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-              <li>
-                <a href="/profile/:id'">
-                  <i className="fa fa-cog" aria-hidden="true" />
-                </a>
-              </li>
-            </ul>
+           
           </Col>
-          <Col span={12} className="mainbar">
+          <Col span={12} className="mainbar d-none d-sm-block">
+            {props.children}
+          </Col>
+          <Col span={24} className="mainbar p-4 d-block d-sm-none">
             {props.children}
           </Col>
           <Col
