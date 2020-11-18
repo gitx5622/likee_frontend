@@ -28,13 +28,6 @@
     text-decoration: none;
   }
   
-  .layout .left-sidebar li:hover {
-    border: 1px solid whitesmoke;
-    width: 80%;
-    border-radius: 100px;
-    background: #f0f5ff;
-  }
-  
   .layout .left-sidebar li {
     list-style: none;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -42,21 +35,10 @@
     padding: 15px;
     font-weight: bolder;
   }
-  .layout .right-sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
-  
+
   .layout .mainbar {
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
-  }
-  
-  .layout .left-sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
   }
   
   .layout .sidebar-footer li {
@@ -66,13 +48,6 @@
     padding: 7px;
   }
 }
-
-
-@media (max-width: 768px) {
-  .layout .mainbar {
-    width: 100%;
-    position: relative;
-    border-right: none;
-    box-sizing: border-box;
-  }
+.see-posts {
+  background-color: #ADEFD1FF;
 }

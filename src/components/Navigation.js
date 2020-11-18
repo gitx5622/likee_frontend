@@ -85,7 +85,7 @@ const Navigation = () => {
   );
 
   return (
-    <div className="mb-2">
+    <div className="mb-2 fixed-top" style={{backgroundColor:"#00203FFF"}}>
       <Navbar className="navbar-header" color="light" light expand="md">
         <NavbarBrand className="mx-auto" href="/">
           <img
@@ -96,7 +96,7 @@ const Navigation = () => {
             height="50px"
             style={{ borderRadius: "20px" }}
           />
-          &nbsp; <strong>L I K E E</strong>
+          &nbsp; <strong style={{color:"white"}}>L I K E E</strong>
         </NavbarBrand>
         <Nav className="links ml-auto" navbar>
           {isAuthenticated ? SignedInLinks : SignedOutLinks}

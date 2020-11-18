@@ -7,6 +7,9 @@
 .style-dropdown {
   cursor: pointer;
 }
+.navbar-header {
+  max-height: 50px;
+}
 
 .navbar-header .logo {
   margin-left: -300px;
@@ -27,9 +30,14 @@
   display: inline;
 }
 
+.signout-links a {
+  color: white;
+}
 @media (max-width: 768px) {
   .navbar-header .logo {
     margin-left: -50px;
+    width: 30px;
+    height: 30px;
   }
   .img_style_nav {
     float: right;
@@ -38,9 +46,13 @@
     height: 30px;
     width: 30px;
   }
-
+  .navbar-header {
+    margin-top: -10px;
+    max-height: 60px;
+  }
   .signout-links a {
     font-size: 14px;
+    color: white;
   }
 
   .logged-nav li {
