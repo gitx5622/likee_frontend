@@ -9,7 +9,7 @@ const RSideBar = () => {
              <SearchBar />
             <br />
             <Card
-              className="trending fixed-top"
+              className="trending"
               style={{
                 maxWidth: "300px",
                 position: "relative",

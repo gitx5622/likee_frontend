@@ -20,7 +20,7 @@ const SideBar = () => {
     let postcount = postsSelector.posts.length;
 
     return ( 
-        <div className="fixed-top"><br/><br/>
+        <div className="left-sidebar">
             <ul className="animated flash mt-20">
               <li>
                 <a href="/">
