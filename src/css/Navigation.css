@@ -29,6 +29,9 @@
 .logged-nav li {
   display: inline;
 }
+.logged-nav a {
+  color: white;
+}
 
 .signout-links a {
   color: white;
@@ -57,6 +60,8 @@
 
   .logged-nav li {
     display: inline;
+  }
+  .logged-nav a {
     color: white;
   }
 }
