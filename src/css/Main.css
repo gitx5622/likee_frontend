@@ -28,6 +28,13 @@
     text-decoration: none;
   }
   
+  .layout .left-sidebar li:hover {
+    border: 1px solid whitesmoke;
+    width: 80%;
+    border-radius: 100px;
+    background: #f0f5ff;
+  }
+  
   .layout .left-sidebar li {
     list-style: none;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -36,11 +43,12 @@
     font-weight: bolder;
   }
 
+  
   .layout .mainbar {
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
   }
-  
+
   .layout .sidebar-footer li {
     margin-left: 0;
     font-size: 12px;
@@ -48,6 +56,13 @@
     padding: 7px;
   }
 }
-.see-posts {
-  background-color: #ADEFD1FF;
+
+
+@media (max-width: 768px) {
+  .layout .mainbar {
+    width: 100%;
+    position: relative;
+    border-right: none;
+    box-sizing: border-box;
+  }
 }

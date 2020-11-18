@@ -78,7 +78,31 @@ const SideBar = () => {
               <li>
                 <a href="/">
                   <FireOutlined style={{ color: "#40a9ff" }} />
-                  &nbsp; Trending
+                  &nbsp; Popular
+                </a>{" "}
+              </li>
+              <li>
+                <a href="/">
+                  <FireOutlined style={{ color: "#40a9ff" }} />
+                  &nbsp; Most Watched
+                </a>{" "}
+              </li>
+              <li>
+                <a href="/">
+                  <FireOutlined style={{ color: "#40a9ff" }} />
+                  &nbsp; Ratings
+                </a>{" "}
+              </li>
+              <li>
+                <a href="/">
+                  <FireOutlined style={{ color: "#40a9ff" }} />
+                  &nbsp; Blocked
+                </a>{" "}
+              </li>
+              <li>
+                <a href="/">
+                  <FireOutlined style={{ color: "#40a9ff" }} />
+                  &nbsp; Settings
                 </a>{" "}
               </li>
             </ul>
