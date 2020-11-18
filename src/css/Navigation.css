@@ -57,5 +57,6 @@
 
   .logged-nav li {
     display: inline;
+    color: white;
   }
 }
